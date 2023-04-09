@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int SetNumber(string text = "")
+{
+    Console.Write($"Enter number {text}: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+int num = SetNumber();
+int sum = 0;
+for (int i = 1; i <= num; i++)
+{
+    sum += i;
+}
+System.Console.WriteLine($"sum = {sum}");

@@ -6,10 +6,11 @@
 }
 int MethodNum(int number)
 {
+    int count = 0;
     if (number < 0) number *= -1;
-    for (int count = 0;; count <= number; ++count)
+    for (; number >= 0; number /= 10)
     {
-        number /= 10;
+        ++count;
     }
     return count;
 }
