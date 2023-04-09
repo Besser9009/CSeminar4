@@ -6,9 +6,8 @@
 }
 int MethodNum(int number)
 {
-    int count = 0;
     if (number < 0) number *= -1;
-    for (; count <= number; count++)
+    for (int count = 0;; count <= number; ++count)
     {
         number /= 10;
     }
