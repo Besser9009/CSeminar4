@@ -8,9 +8,9 @@ int MethodNum(int number)
 {
     int count = 0;
     if (number < 0) number *= -1;
-    for (; number >= 0; number /= 10)
+    for (; count <= number; ++count)
     {
-        ++count;
+        number /= 10;
     }
     return count;
 }
